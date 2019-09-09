@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>{{ title }}</title>
+
+    {% load static %}
+    <link rel="stylesheet" href={% static "Home/base.css" %}>
+    {% block css_content %}
+    {% endblock %}
+</head>
+
+
+<body>
+  {% block body_content %}
+  
+    {% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{% extends "Home/base.html" %}
+
+
+{% block css_content %}
+
+{% load static %}
+<link rel="stylesheet" href={% static "Home/title_gray.css" %}>
+
+{% endblock %}
+
+
+{% block body_content %}
+
+<h1>About me</h1>
+
+<div class="profilepic">
+  {% load static %} 
+ <img  class = "profilepic" src ="{% static "Home/profilepic.jpg" %}" alt="profilepic">
+</div>
+
+<p>I'm Adolfo.</p>
+<p1><strong>I'm going to clear my mind with the "ideal prospect" and a way to keep calm through the moment and desired really goals. Software engineering enthusiast."Rebirth takes place when everything falls apart"</strong></p1>
+
+{% endblock %}
