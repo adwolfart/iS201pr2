@@ -3,14 +3,9 @@ from django.http import HttpResponse
 from django.views import View
 #from django.template import loader
 
+from Post.models import Post
 # Create your views here.
 
-
-"""
-# Crea una vista que regresa un HTML(Template)
-def index(request):
-    return render(request, 'Home/index.html')
-"""
 
 """
 # Function views
@@ -38,7 +33,9 @@ class Index(View):
         """
             Get in my Index.
         """
-        print('With class-based views')
+        all_posts = Post.objects.all()
+        self.context['posts'] = all_posts
+        # print('With class-based views')
         return render(request, self.template, self.context)
 
 

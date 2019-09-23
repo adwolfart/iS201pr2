@@ -3,3 +3,4 @@
 
 
 - Pŕacticas de laboratorio.
+  -Blog.
