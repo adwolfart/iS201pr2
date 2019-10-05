@@ -1,0 +1,4 @@
+*.swp
+*.pycdb
+.sqlite3
+PersonalBlog/media/*
